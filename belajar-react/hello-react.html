@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar ReactJs</title>
+    <!-- library react di HTML, pada prosesnya ada 3-->
+    <!-- react.js = membuat komponen -->
+    <!-- react-dom.js = me-render komponen ke dalam HTML -->
+    <!-- babel.js = (kode js versi ES6) dapat dikenali pada web browser -->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+
+    <!-- langkah untuk membuat aplikasi react -->
+    <!-- 1. menambahkan library react ke HTML -->
+    <!-- 2. membuat elemen HTML untuk wadah aplikasi -->
+    <!-- 3. membuat komponen -->
+    <!-- 4. Me-render komponen ke HTML -->
+
+    <!-- membuat elemen = disini pake elemen div dengan id app -->
+    <!-- tidak harus id app karena kita nanti akan menentukan elemen dengan method getElemenById() -->
+    <!-- div untuk wadah aplikasinya -->
+    <div id="app"></div>
+
+    <!-- dari kode aplikasi bertipe text/babel, kita membuat komponen bernama hello dari class React.Component -->
+    <script type="text/babel">
+        // komponen hello pada baris 30-34
+        class Hello extends React.Component {
+            render() {
+                return <h1>Hello World Reactjs!</h1>
+            }
+        }
+        // getElementById = memilih div
+        // rener(<hello/>) = komponen yang akan dirender
+        ReactDOM.render(<Hello/>, document.getElementById("app"))
+    </script>
+</body>
+</html>
