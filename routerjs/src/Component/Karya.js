@@ -10,4 +10,4 @@ class Karya extends React.Component {
     }
 }
 
-export default 'Karya';
+export default Karya;

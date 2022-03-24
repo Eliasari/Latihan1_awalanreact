@@ -1,13 +1,13 @@
 import React from 'react'
 
-class Kontak extends React.Component {
+class Beranda extends React.Component {
     render(){
         return(
             <div>
-                <h2>Ini Kontak</h2>
+                <h2>Ini Beranda</h2>
             </div>
         )
     }
 }
 
-export default 'Kontak';
+export default Beranda;
