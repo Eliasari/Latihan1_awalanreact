@@ -18,7 +18,7 @@ class Card extends React.Component{
                                 {this.props.nama}
                             </h5>
                             <h6 className="text-dark">
-                                Penulis: {this.props.tanggal}
+                                Tanggal Pelaksanaan: {this.props.tanggal}
                             </h6>
 
                             {/* button untuk mengedit */}

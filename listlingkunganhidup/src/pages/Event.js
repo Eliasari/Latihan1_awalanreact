@@ -46,7 +46,7 @@ class Event extends Component {
         return (
             <div className="container">
                 <h4 className="text-info my-2">
-                    Nama Event: {this.state.nama}
+                    Nama: {this.state.namaPengguna}
                 </h4>
 
                 <input type="text" className="form-control my-2" placeholder="Pencarian"
@@ -90,7 +90,7 @@ class Event extends Component {
                                         onChange={ev => this.setState({ nama: ev.target.value })}
                                         required />
 
-                                    Tanggal
+                                    Tanggal Pelaksanaan
                                     <input type="text" className="form-control mb-2"
                                         value={this.state.tanggal}
                                         onChange={ev => this.setState({ tanggal: ev.target.value })}
